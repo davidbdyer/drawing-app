@@ -149,10 +149,16 @@ document.addEventListener('dblclick', (event) => {
 });
 
 // warning dialog
+
+window.addEventListener('load', () => {
+	warningDialog.style.display = 'flex';
+	warningDialog.showModal();
+})
+
 btnWarnDialog.addEventListener('click', () => {
-	warningDialog.close();
 	warningDialog.style.animation = 'fade-out 1s';
 	addEventListener('animationend', () => {
+		warningDialog.close();
 		warningDialog.style.display = 'none';
 		warningDialog.style.removeProperty('animation');
 	}, {once : true});

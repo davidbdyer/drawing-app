@@ -75,21 +75,21 @@ input[type='color']::-webkit-color-swatch {
 	font-weight: 700;
 }
 
-.btn:focus,
 .btn:hover {
 	opacity: 0.6;
 }
 
 .dialog {
-	display: flex;
 	position: absolute;
-	top: 50%;
 	flex-direction: column;
-	transform: translateY(-50%);
 	border: 0;
 	border-radius: var(--border-rad);
 	box-shadow: 0.25rem 0.25rem 0.5rem hsla(var(--clr) / 0.2);
 }
+
+/* .dialog::backdrop {
+	background: hsla(var(--clr) / 0.5);
+} */
 
 .dialog .btn {
 	align-self: end;
