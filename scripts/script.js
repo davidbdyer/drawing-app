@@ -6,6 +6,8 @@ const sizeEl = document.getElementById('size');
 const colorEl = document.getElementById('color');
 const clearEl = document.getElementById('clear');
 const toolboxEl = document.getElementById('toolbox');
+const warningDialog = document.getElementById('warning-dialog');
+const btnWarnDialog = document.getElementById('btn-warning-dialog');
 
 const ctx = canvas.getContext('2d');
 
@@ -144,4 +146,14 @@ clearEl.addEventListener('click', () => {
 document.addEventListener('dblclick', (event) => {
 	event.preventDefault();
 	event.stopPropagation();
+});
+
+// warning dialog
+btnWarnDialog.addEventListener('click', () => {
+	warningDialog.close();
+	warningDialog.style.animation = 'fade-out 1s';
+	addEventListener('animationend', () => {
+		warningDialog.style.display = 'none';
+		warningDialog.style.removeProperty('animation');
+	}, {once : true});
 });
