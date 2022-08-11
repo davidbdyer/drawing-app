@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+
+		<!-- Primary Meta Tags -->
+		<title>David's Little Drawing App</title>
+		<meta name="title" content="David's Little Drawing App" />
+		<meta name="description" content="A simple drawing app using canvas." />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://davidbdyer.myqnapcloud.com:8443/drawing-app/" />
+		<meta property="og:title" content="David's Little Drawing App" />
+		<meta property="og:description" content="A simple drawing app using HTML Canvas." />
+		<meta property="og:image" content="https://davidbdyer.myqnapcloud.com:8443/drawing-app/images/site-thumb.jpg" />
+		<meta property="og:image:width" content="1600" />
+		<meta property="og:image:height" content="630" />
+
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+		<!-- Apple iOS Safari Theme -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="Drawing" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style-dist.css" />
+
+		<script src="scripts/script.js" defer></script>
+	</head>
+
+	<body>
+		<canvas id="canvas"></canvas>
+		<div class="toolbox" id="toolbox">
+			<button id="decrease">-</button>
+			<span id="size">10</span>
+			<button id="increase">+</button>
+			<input type="color" id="color" />
+			<button id="clear">clr</button>
+		</div>
+	</body>
+</html>

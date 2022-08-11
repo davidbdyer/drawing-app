@@ -1,0 +1,10 @@
+.DS_Store
+prepros.config
+.prettierrc
+.nova/
+.vscode/
+node_modules/
+*.afdesign
+package-lock.json
+package.json
+
