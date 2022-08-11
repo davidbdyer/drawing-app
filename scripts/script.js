@@ -88,12 +88,10 @@ canvas.addEventListener('touchmove', (e) => {
 // Set Canvas Size
 function setCanvasSize() {
 	const width = window.innerWidth;
-	const height = window.innerHeight - 90;
+	const height = window.innerHeight - toolboxEl.offsetHeight;
 
 	canvas.width = width;
 	canvas.height = height;
-
-	toolboxEl.style.width = width + 4 + 'px';
 }
 
 // Create Drawing
